@@ -1,0 +1,119 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/pacman.py 1756681387 26343
+
+.___v_desugar_1 = pyimport "game"
+.game = pyimport "game"
+.GameStateData: {game.GameStateData}
+.___v_desugar_2 = pyimport "game"
+
+.Game: {game.Game}
+.___v_desugar_3 = pyimport "game"
+
+.Directions: {game.Directions}
+.___v_desugar_4 = pyimport "game"
+
+.Actions: {game.Actions}
+.___v_desugar_5 = pyimport "util"
+.util = pyimport "util"
+.nearestPoint: (pos: Never) -> global::Tuple([Int, Int])
+.___v_desugar_6 = pyimport "util"
+
+.manhattanDistance: |Self <: global::Indexable(?K, ?R), Self <: global::Indexable(?K, ?V), K: Type, V: Type, R: Type|(xy1: Self, xy2: Self) -> Nat
+
+.layout = pyimport "layout"
+
+.sys: Never
+.types: Never
+.time: Never
+.random: Never
+.os: Never
+
+.GameState: ClassType
+.GameState.__call__: (prevState: Obj := Obj) -> pacman.GameState
+.GameState.explored: Never
+.GameState.getAndResetExplored: () -> Never
+.GameState.getAndResetExplored: Never
+.GameState.getLegalActions: (self: pacman.GameState, agentIndex: {0} := {0}) -> Never
+.GameState.generateSuccessor: (self: pacman.GameState, agentIndex: {0}, action: Obj) -> pacman.GameState
+.GameState.getLegalPacmanActions: (self: pacman.GameState) -> Never
+.GameState.generatePacmanSuccessor: (self: pacman.GameState, action: Obj) -> pacman.GameState
+.GameState.getPacmanState: (self: pacman.GameState) -> Never
+.GameState.getPacmanPosition: (self: pacman.GameState) -> Never
+.GameState.getGhostStates: (self: pacman.GameState) -> Never
+.GameState.getGhostState: (self: pacman.GameState, agentIndex: {0}) -> Never
+.GameState.getGhostPosition: (self: pacman.GameState, agentIndex: Obj) -> Never
+.GameState.getGhostPositions: (self: pacman.GameState) -> global::List!(Never, _: Nat)
+.GameState.getNumAgents: (self: pacman.GameState) -> {_: Int}
+.GameState.getScore: (self: pacman.GameState) -> Float
+.GameState.getCapsules: (self: pacman.GameState) -> Never
+.GameState.getNumFood: (self: pacman.GameState) -> Never
+.GameState.getFood: (self: pacman.GameState) -> Never
+.GameState.getWalls: (self: pacman.GameState) -> Never
+.GameState.hasFood: (self: pacman.GameState, x: Obj, y: Obj) -> Never
+.GameState.hasWall: (self: pacman.GameState, x: Obj, y: Obj) -> Never
+.GameState.isLose: (self: pacman.GameState) -> Never
+.GameState.isWin: (self: pacman.GameState) -> Structural({.__or__ = (self: Never, Obj) -> Bool})
+.GameState.deepCopy: (self: pacman.GameState) -> pacman.GameState
+.GameState.__eq__: |E: Type, Type_15180 <: Structural({.data = ?E})|(self: pacman.GameState, other: Type_15180) -> Bool
+.GameState.__hash__: (self: pacman.GameState) -> Int
+.GameState.__str__: (self: pacman.GameState) -> Str
+.GameState.initialize: (self: pacman.GameState, layout: Obj, numGhostAgents: Obj := Obj) -> NoneType
+
+.SCARED_TIME: {40}
+.COLLISION_TOLERANCE: {0.7}
+.TIME_PENALTY: {1}
+.ClassicGameRules: ClassType
+.ClassicGameRules.timeout: Never
+.ClassicGameRules.__call__: (timeout: Obj := Obj) -> pacman.ClassicGameRules
+.ClassicGameRules.newGame: |Type_15202 <: Structural({.getNumGhosts = (self: Obj) -> ?17284}), Type_17284: Type|(self: pacman.ClassicGameRules, layout: Type_15202, pacmanAgent: Obj, ghostAgents: Never, display: Obj, quiet: Obj := {False}, catchExceptions: Obj := {False}) -> game.Game
+.ClassicGameRules.process: |Type_17421: Type, Type_17400 <: Structural({.gameOver = ?17421})|(self: pacman.ClassicGameRules, state: pacman.GameState, game: Type_17400) -> NoneType
+.ClassicGameRules.win: |Type_17421: Type, Type_17400 <: Structural({.gameOver = ?17421})|(self: pacman.ClassicGameRules, state: pacman.GameState, game: Type_17400) -> NoneType
+.ClassicGameRules.lose: |Type_17421: Type, Type_17400 <: Structural({.gameOver = ?17421})|(self: pacman.ClassicGameRules, state: pacman.GameState, game: Type_17400) -> NoneType
+.ClassicGameRules.getProgress: |Type_15305 <: Structural({.state = ?17461}), Type_17461: Type|(self: pacman.ClassicGameRules, game: Type_15305) -> Float
+.ClassicGameRules.agentCrash: (self: pacman.ClassicGameRules, game: Obj, agentIndex: Obj) -> NoneType
+.ClassicGameRules.getMaxTotalTime: (self: pacman.ClassicGameRules, agentIndex: Obj) -> Never
+.ClassicGameRules.getMaxStartupTime: (self: pacman.ClassicGameRules, agentIndex: Obj) -> Never
+.ClassicGameRules.getMoveWarningTime: (self: pacman.ClassicGameRules, agentIndex: Obj) -> Never
+.ClassicGameRules.getMoveTimeout: (self: pacman.ClassicGameRules, agentIndex: Obj) -> Never
+.ClassicGameRules.getMaxTimeWarnings: (self: pacman.ClassicGameRules, agentIndex: Obj) -> {0}
+
+.PacmanRules: ClassType
+.PacmanRules.__call__: () -> pacman.PacmanRules
+.PacmanRules.PACMAN_SPEED: {1}
+.PacmanRules.getLegalActions: (state: pacman.GameState) -> global::List!(Never, 1)
+.PacmanRules.getLegalActions: Never
+.PacmanRules.applyAction: (state: pacman.GameState, action: Obj) -> NoneType
+.PacmanRules.applyAction: Never
+.PacmanRules.consume: |E: Type, Type_17768: Type, Type_15413 <: Structural({.getCapsules = (self: Obj) -> ?17768; .getNumFood = (self: Obj) -> ?E; .data = ?17695 and ?17698}), Type_17695: Type, Type_17698: Type|(position: global::Tuple([Int, Int]), state: Type_15413) -> NoneType
+.PacmanRules.consume: Never
+
+.GhostRules: ClassType
+.GhostRules.__call__: () -> pacman.GhostRules
+.GhostRules.GHOST_SPEED: {1.0}
+.GhostRules.getLegalActions: (state: pacman.GameState, ghostIndex: {0}) -> global::List!(Str, -1)
+.GhostRules.getLegalActions: Never
+.GhostRules.applyAction: (state: pacman.GameState, action: Obj, ghostIndex: {0}) -> NoneType
+.GhostRules.applyAction: Never
+.GhostRules.decrementTimer: |Type_18057: Type, O <: global::Ord, Type_18059: Type, Type_15455 <: Structural({.configuration = ?18057 and ?18059; .scaredTimer = {_: ?O and Nat | _ == 1}})|(ghostState: Type_15455) -> NoneType
+.GhostRules.decrementTimer: Never
+.GhostRules.checkDeath: (state: pacman.GameState, agentIndex: {0}) -> NoneType
+.GhostRules.checkDeath: Never
+.GhostRules.collide: |Type_18129: Type, Type_18179 <: Structural({.data = ?18129 and ?18127}), Type_18127: Type|(state: Type_18179, ghostState: Structural({.scaredTimer = Structural({.__gt__ = (self: Never, Obj) -> Bool})}), agentIndex: Obj) -> NoneType
+.GhostRules.collide: Never
+.GhostRules.canKill: |K: Type, Self <: global::Indexable(?K, ?V), V: Type|(pacmanPosition: Self, ghostPosition: Self) -> {.manhattanDistance(.ghostPosition, .pacmanPosition) in {Type_v_global_8725: Float | (Type_v_global_8725 == 0.7 or Type_v_global_8725 <= 0.7)}}
+.GhostRules.canKill: Never
+.GhostRules.placeGhost: |Type_18129: Type, Type_18179 <: Structural({.data = ?18129 and ?18127}), Type_18127: Type|(state: Type_18179, ghostState: Structural({.scaredTimer = Structural({.__gt__ = (self: Never, Obj) -> Bool})})) -> NoneType
+.GhostRules.placeGhost: Never
+
+.default: (Str: Obj) -> Never
+.parseAgentArgs: (Str: Obj) -> global::Dict!({Str: Nat})
+.readCommand: (argv: Obj) -> global::GenericDict
+.loadAgent: |T <: Str, T: Type|(pacman: T, nographics: Bool) -> () -> T
+.replayGame: |Type_15547 <: Structural({.getNumGhosts = (self: Obj) -> ?19121}), Type_19121: Type|(layout: Type_15547, actions: global::Iterable(Never), display: Never) -> NoneType
+.runGames: |Type_17284 <: NoneType or Int, Type_15202 <: Structural({.getNumGhosts = (self: Obj) -> ?Type_17284})|(layout: Type_15202, pacman: Obj, ghosts: Never, display: Obj, numGames: Obj, record: Bool, numTraining: Int := {0} and Int, catchExceptions: Obj := {False}, timeout: Obj := {30}) -> global::List!(Structural({.state = pacman.GameState}), 1)
+
+
+.args: Never
+
+
+
+

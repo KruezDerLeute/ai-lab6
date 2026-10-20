@@ -1,0 +1,65 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/testClasses.py 1756681387 6871
+.inspect: Never
+
+.re: Never
+
+.sys: Never
+
+.Question: ClassType
+.Question <: Obj
+.Question.timeout: Never
+.Question.testCases: Never
+.Question.display: Never
+.Question.maxPoints: Never
+.Question.__call__: (questionDict: Obj, display: Obj, timeout: Obj := Obj) -> testClasses.Question
+.Question.raiseNotDefined: (self: testClasses.Question) -> NoneType
+.Question.getDisplay: (self: testClasses.Question) -> Never
+.Question.getMaxPoints: (self: testClasses.Question) -> Never
+.Question.getTimeout: (self: testClasses.Question) -> Never
+.Question.addTestCase: (self: testClasses.Question, testCase: Obj, thunk: Obj) -> NoneType
+.Question.execute: (self: testClasses.Question, grades: Obj) -> NoneType
+
+.PassAllTestsQuestion: ClassType
+testClasses = pyimport "testClasses"
+.PassAllTestsQuestion <: .Question
+.PassAllTestsQuestion.execute: |Type_15330: Type, Type_15460: Type, T: Type, Type_14971 <: Structural({.assignZeroCredit = (self: Obj) -> ?15330; .fail = (self: Obj, ?15460) -> ?T; .assignFullCredit = (self: Obj) -> ?U}), U: Type|(self: testClasses.PassAllTestsQuestion, grades: Type_14971) -> NoneType
+
+.ExtraCreditPassAllTestsQuestion: ClassType
+.ExtraCreditPassAllTestsQuestion <: .Question
+.ExtraCreditPassAllTestsQuestion.extraPoints: Never
+.ExtraCreditPassAllTestsQuestion.__call__: (questionDict: Obj, display: Obj) -> testClasses.ExtraCreditPassAllTestsQuestion
+.ExtraCreditPassAllTestsQuestion.execute: |Type_15698: Type, Type_15682: Type, Type_15540: Type, T: Type, Type_14984 <: Structural({.assignFullCredit = (self: Obj) -> ?15682; .assignZeroCredit = (self: Obj) -> ?15540; .fail = (self: Obj, ?15669) -> ?T; .addPoints = (self: Obj, ?15698) -> ?U}), Type_15669: Type, U: Type|(self: testClasses.ExtraCreditPassAllTestsQuestion, grades: Type_14984) -> NoneType
+
+.HackedPartialCreditQuestion: ClassType
+.HackedPartialCreditQuestion <: .Question
+.HackedPartialCreditQuestion.execute: |Type_16020: Type, Type_14992 <: Structural({.assignZeroCredit = (self: Obj) -> ?T; .addPoints = (self: Obj, ?16020) -> ?U}), T: Type, U: Type|(self: testClasses.HackedPartialCreditQuestion, grades: Type_14992) -> NoneType
+
+.Q6PartialCreditQuestion: ClassType
+.Q6PartialCreditQuestion <: .Question
+.Q6PartialCreditQuestion.execute: |Type_14998 <: Structural({.assignZeroCredit = (self: Obj) -> ?T}), T: Type|(self: testClasses.Q6PartialCreditQuestion, grades: Type_14998) -> NoneType
+
+.PartialCreditQuestion: ClassType
+.PartialCreditQuestion <: .Question
+.PartialCreditQuestion.execute: |Type_16354: Type, Type_16353: Type, Type_15006 <: Structural({.assignZeroCredit = (self: Obj) -> ?16265 and (self: Obj) -> ?16343; .fail = (self: Obj, ?16353) -> ?16354}), Type_16265: Type, Type_16343: Type|(self: testClasses.PartialCreditQuestion, grades: Type_15006) -> NoneType
+
+.NumberPassedQuestion: ClassType
+.NumberPassedQuestion <: .Question
+.NumberPassedQuestion.execute: |Type_16415: Type, Type_16416: Type, Type_15016 <: Structural({.addPoints = (self: Obj, ?16415) -> ?16416})|(self: testClasses.NumberPassedQuestion, grades: Type_15016) -> NoneType
+
+.TestCase: ClassType
+.TestCase <: Obj
+.TestCase.question: Never
+.TestCase.testDict: Never
+.TestCase.path: Never
+.TestCase.messages: Never
+.TestCase.__call__: (question: Obj, testDict: Obj) -> testClasses.TestCase
+.TestCase.raiseNotDefined: (self: testClasses.TestCase) -> NoneType
+.TestCase.getPath: (self: testClasses.TestCase) -> Never
+.TestCase.__str__: (self: testClasses.TestCase) -> NoneType
+.TestCase.execute: (self: testClasses.TestCase, grades: Obj, moduleDict: Obj, solutionDict: Obj) -> NoneType
+.TestCase.writeSolution: (self: testClasses.TestCase, moduleDict: Obj, filePath: Obj) -> {True}
+.TestCase.testPass: |Type_16552: Type, Type_15083 <: Structural({.addMessage = (self: Obj, ?O) -> ?16552 and (self: Obj, ?O) -> ?16590}), O: Type, Type_16590: Type|(self: testClasses.TestCase, grades: Type_15083) -> {True}
+.TestCase.testFail: |Type_16628: Type, Type_15094 <: Structural({.addMessage = (self: Obj, ?O) -> ?16628 and (self: Obj, ?O) -> ?16660}), Type_16660: Type, O: Type|(self: testClasses.TestCase, grades: Type_15094) -> {False}
+.TestCase.testPartial: |Type_15104: Type, T: Type, Type_15104 <: Structural({.__sub__ = (self: Never, ?R) -> ?O and (self: Never, ?R) -> ?O; .__ge__ = (self: Never, ?R) -> Bool}), O: Type, Type_16693: Type, R: Type, Type_15102 <: Structural({.addPoints = (self: Obj, ?15104) -> ?16693; .addMessage = (self: Obj, ?O) -> ?T})|(self: testClasses.TestCase, grades: Type_15102, points: Type_15104, maxPoints: R) -> {True}
+.TestCase.addMessage: (self: testClasses.TestCase, message: Str) -> NoneType
+

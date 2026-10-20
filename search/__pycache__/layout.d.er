@@ -1,0 +1,39 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/layout.py 1756681387 5782
+.___v_desugar_1 = pyimport "util"
+.util = pyimport "util"
+.manhattanDistance: |Self <: global::Indexable(?K, ?R), Self <: global::Indexable(?K, ?V), K: Type, V: Type, R: Type|(xy1: Self, xy2: Self) -> Nat
+.___v_desugar_2 = pyimport "game"
+.game = pyimport "game"
+.Grid: {game.Grid}
+.os: Never
+
+.random: Never
+
+.___v_desugar_3: Never
+.reduce: Never
+.VISIBILITY_MATRIX_CACHE: Never
+.Layout: ClassType
+.Layout.capsules: Never
+.Layout.numGhosts: Never
+.Layout.totalFood: Never
+.Layout.walls: Never
+.Layout.agentPositions: Never
+.Layout.layoutText: Never
+.Layout.height: Never
+.Layout.food: Never
+.Layout.width: Never
+.Layout.__call__: (layoutText: Obj) -> layout.Layout
+.Layout.getNumGhosts: (self: layout.Layout) -> Never
+.Layout.initializeVisibilityMatrix: (self: layout.Layout) -> NoneType
+.Layout.isWall: (self: layout.Layout, pos: global::Indexable(Obj, Never)) -> Never
+.Layout.getRandomLegalPosition: (self: layout.Layout) -> global::Tuple([Never, Never])
+.Layout.getRandomCorner: (self: layout.Layout) -> Never
+.Layout.getFurthestCorner: (self: layout.Layout, pacPos: global::Indexable(Obj, Never)) -> Never
+.Layout.isVisibleFrom: (self: layout.Layout, ghostPos: Obj, pacPos: global::Iterable(Never), pacDirection: Obj) -> Bool
+.Layout.__str__: (self: layout.Layout) -> Str
+.Layout.deepCopy: (self: layout.Layout) -> layout.Layout
+.Layout.processLayoutText: (self: layout.Layout, layoutText: global::Indexable(Obj, global::Indexable(Obj, {"Type_"}))) -> NoneType
+.Layout.processLayoutChar: (self: layout.Layout, x: Obj, y: Obj, layoutChar: Obj) -> NoneType
+
+.getLayout: (name: Str, back: Structural({.__ge__ = (self: Never, Obj) -> Bool}) := {2} and Structural({.__ge__ = (self: Never, Obj) -> Bool})) -> {None}
+.tryToLoad: (fullname: Str) -> {None}

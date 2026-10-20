@@ -1,0 +1,29 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/textDisplay.py 1756681387 2301
+.time: Never
+
+.pacman = pyimport "pacman"
+
+
+
+.DRAW_EVERY: {1}
+.SLEEP_TIME: {0}
+.DISPLAY_MOVES: {False}
+.QUIET: {False}
+.NullGraphics: ClassType
+.NullGraphics.__call__: () -> textDisplay.NullGraphics
+.NullGraphics.initialize: (self: textDisplay.NullGraphics, state: Obj, isBlue: Obj := Obj) -> NoneType
+.NullGraphics.update: (self: textDisplay.NullGraphics, state: Obj) -> NoneType
+.NullGraphics.checkNullDisplay: (self: textDisplay.NullGraphics) -> {True}
+.NullGraphics.pause: (self: textDisplay.NullGraphics) -> NoneType
+.NullGraphics.draw: (self: textDisplay.NullGraphics, state: Obj) -> NoneType
+.NullGraphics.updateDistributions: (self: textDisplay.NullGraphics, dist: Obj) -> NoneType
+.NullGraphics.finish: (self: textDisplay.NullGraphics) -> NoneType
+
+.PacmanGraphics: ClassType
+.PacmanGraphics.__call__: (speed: Obj := Obj) -> textDisplay.PacmanGraphics
+.PacmanGraphics.initialize: (self: textDisplay.PacmanGraphics, state: Obj, isBlue: Obj := Obj) -> NoneType
+.PacmanGraphics.update: |Type_18672: Type, T: Type, Type_18555 <: Structural({._win = ?18672; .getGhostPosition = (self: Obj, ?T) -> Never; .score = ?R; .agentStates = ?18599; ._lose = ?R; .getPacmanPosition = (self: Obj) -> Never}), R: Type, Type_18599 <: Structural({.__len__ = (self: Never) -> Nat})|(self: textDisplay.PacmanGraphics, state: Type_18555) -> NoneType
+.PacmanGraphics.pause: (self: textDisplay.PacmanGraphics) -> NoneType
+.PacmanGraphics.draw: (self: textDisplay.PacmanGraphics, state: Obj) -> NoneType
+.PacmanGraphics.finish: (self: textDisplay.PacmanGraphics) -> NoneType
+

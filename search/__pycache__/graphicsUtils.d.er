@@ -1,0 +1,86 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/graphicsUtils.py 1756681387 11979
+.sys: Never
+
+.math: Never
+
+.random: Never
+
+.string: Never
+
+.time: Never
+
+.types: Never
+
+.tkinter: Never
+
+.os: Never
+
+._Windows: Never
+._root_window: {None}
+._canvas: {None}
+._canvas_xs: {None}
+._canvas_ys: {None}
+._canvas_x: {None}
+._canvas_y: {None}
+._canvas_col: {None}
+._canvas_tsize: {12}
+._canvas_tserifs: {0}
+.formatColor: |O :> Str, Type_209 <: Structural({.__mul__ = (self: Never, ?R) -> ?O}), R: Type, O: Type, R :> {255}|(r: Type_209, g: Structural({.__mul__ = (self: Never, R) -> O}), b: Structural({.__mul__ = (self: Never, R) -> O})) -> O
+.colorToVector: |T :> Float, T: Type|(color: global::Indexable(Obj, T)) -> global::List!(T, _: Nat)
+
+._canvas_tfonts: global::List!({"times new roman", "lucida console"}, 2)
+
+._canvas_tfonts: global::List!({"times", "times new roman", "lucidasans-24", "lucida console"}, 2)
+
+
+
+.sleep: (secs: Nat) -> NoneType
+.begin_graphics: |R :> {"Graphics Window"}, O :> Nat, R :> {1}, O: Type|(width: Structural({.__sub__ = (self: Never, R) -> O}) := {640} and Structural({.__sub__ = (self: Never, R) -> O}), height: Structural({.__sub__ = (self: Never, R) -> O}) := {480} and Structural({.__sub__ = (self: Never, R) -> O}), color: Obj := O, title: Structural({.__or__ = (self: Never, R) -> O}) := {None} and Structural({.__or__ = (self: Never, R) -> O})) -> NoneType
+._leftclick_loc: {None}
+._rightclick_loc: {None}
+._ctrl_leftclick_loc: {None}
+._leftclick: |Type_1067: Type, Type_245 <: Structural({.x = ?1066; .y = ?1067}), Type_1066: Type|(event: Type_245) -> NoneType
+._rightclick: |Type_1092: Type, Type_246 <: Structural({.x = ?1082; .y = ?1092}), Type_1082: Type|(event: Type_246) -> NoneType
+._ctrl_leftclick: |Type_251 <: Structural({.x = ?1104; .y = ?1111}), Type_1104: Type, Type_1111: Type|(event: Type_251) -> NoneType
+.wait_for_click: () -> NoneType
+.draw_background: () -> NoneType
+._destroy_window: (event: Obj := Obj) -> NoneType
+.end_graphics: () -> NoneType
+.clear_screen: (background: Obj := Obj) -> NoneType
+.polygon: |Type_289 :> {1}, E :> {None}|(coords: global::Iterable(global::Tuple([{Type_v_global_1315: NoneType or Nat | (Type_v_global_1315 == 0 or Type_v_global_1315 == None)}, {Type_v_global_1316: NoneType or Nat | (Type_v_global_1316 == 0 or Type_v_global_1316 == None)}])), outlineColor: {_: E and NoneType | _ == None}, fillColor: E := E, filled: {True} := {True}, smoothed: Obj := Obj, behind: {0} := {0} and {0}, width: Type_289 := Type_289 and Type_289) -> NoneType
+.square: |R: Type|(pos: global::Indexable(Obj, Structural({.__sub__ = (self: Never, R) -> {Type_v_global_1315: NoneType or Nat | (Type_v_global_1315 == 0 or Type_v_global_1315 == None)}; .__add__ = (self: Never, R) -> {Type_v_global_1315: NoneType or Nat | (Type_v_global_1315 == 0 or Type_v_global_1315 == None)} and (self: Never, R) -> Never})), r: R, color: {_: Never | True}, filled: {True} := {True}, behind: {0} := {0}) -> NoneType
+.circle: |O <: Structural({.__sub__ = (self: Never, ?R) -> ?O}), R: Type, O: Type, O <: Structural({.__sub__ = (self: Never, ?R) -> ?O})|(pos: global::Indexable(Obj, Structural({.__sub__ = (self: Never, R) -> O and (self: Never, R) -> O; .__add__ = (self: Never, R) -> O and (self: Never, R) -> O})), r: R, outlineColor: R, fillColor: Structural({.__or__ = (self: Never, R) -> O}) := {None} and Structural({.__or__ = (self: Never, R) -> O}), endpoints: {None} := {None} and {None}, style: Obj := {"pieslice"}, width: Obj := {2}) -> Never
+.image: (pos: global::Indexable(Obj, Never), file: Obj := Obj) -> Never
+.refresh: () -> NoneType
+.moveCircle: |R :> {1}, R: Type|(id: Obj, pos: global::Indexable(Obj, Structural({.__sub__ = (self: Never, R) -> Structural({.__sub__ = (self: Never, R) -> Never}) and (self: Never, R) -> Structural({.__sub__ = (self: Never, R) -> Never}); .__add__ = (self: Never, R) -> Never})), r: R, endpoints: {None} := {None}) -> NoneType
+.edit: (id: Obj, *args: global::Tuple([Str, Nat])) -> NoneType
+.text: |Type_383: Type|(pos: global::Indexable(Obj, Never), color: Obj, contents: Obj, font: Obj := Obj, size: Obj := Obj, style: Type_383 := Type_383, anchor: Obj := Obj) -> Never
+.changeText: (id: Obj, newText: Obj, font: Obj := Obj, size: Obj := Obj, style: Obj := Obj) -> NoneType
+.changeColor: (id: Obj, newColor: Obj) -> NoneType
+.line: |K: Type, Self <: global::Indexable(?K, ?V), V: Type, Self <: global::Indexable(?K, ?V)|(here: Self, there: Self, color: Obj := Obj, width: Obj := Obj) -> Never
+._keysdown: global::Dict!({Never: Nat})
+._keyswaiting: global::Dict!({Never: Nat})
+._got_release: {None}
+._keypress: |Type_451 <: Structural({.keysym = ?K}), K: Type|(event: Type_451) -> NoneType
+._keyrelease: (event: Obj) -> NoneType
+.remap_arrows: |Type_3555: Type, T: Type, Type_462 <: Structural({.char = ?T and ?3555; .keycode = ?T}), T :> NoneType|(event: Type_462) -> NoneType or T
+._clear_keys: |Type_464 :> {None}|(event: Type_464 := Type_464 and Type_464) -> NoneType
+.keys_pressed: (d_o_e: Obj := Obj, d_w: Obj := Obj) -> global::DictKeys(Never)
+.keys_waiting: () -> Never
+.wait_for_keys: () -> global::List!(Never, 0)
+.remove_from_screen: (x: Obj, d_o_e: Obj := Obj, d_w: Obj := Obj) -> NoneType
+._adjust_coords: |Type_3969: Type, Type_3961: Type, Type_510 <: Structural({.__len__ = (self: Never) -> Nat; .__setitem__ = (self: Obj, Int, ?O) -> ?3969 and (self: Obj, ?4011, ?O) -> ?4013; .__getitem__ = (self: Obj, Int) -> ?3961 and (self: Obj, ?3998) -> ?3999}), O: Type, Type_4011: Type, Type_510 <: Structural({.__len__ = (self: Never) -> Nat; .__setitem__ = (self: Never, Int, ?O) -> ?3969 and (self: Never, ?4011, ?O) -> ?4013; .__getitem__ = (self: Never, Int) -> ?3961 and (self: Never, ?3998) -> ?3999}), Type_3998: Type, Type_4013: Type, Type_3999: Type, R: Type|(coord_list: Type_510, x: R, y: R) -> Type_510
+.move_to: |Type_526: Type, O: Type, Type_528: Type|(Obj: Obj, x: O, y: O := O, d_o_e: Type_526 := Type_526 and Type_526, d_w: Type_528 := Type_528 and Type_528) -> NoneType
+.move_by: |K: Type, Self <: global::Indexable(?K, ?V), V: Type, K :> {0, 1}, Self <: global::Indexable(?K, ?Self)|(Obj: Obj, x: Self, y: global::Indexable(K, Self) := global::Indexable(K, Self), d_o_e: Bool := Bool, d_w: Obj := Obj, lift: Obj := Obj) -> NoneType
+.writePostscript: (filename: global::PathLike) -> NoneType
+.ghost_shape: global::List!(global::Tuple([Float, Float]), 11)
+
+
+
+
+.g: Never
+
+
+
+
+

@@ -1,0 +1,13 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/testParser.py 1756681387 2995
+.re: Never
+
+.sys: Never
+
+.TestParser: ClassType
+.TestParser <: Obj
+.TestParser.path: Never
+.TestParser.__call__: (path: Obj) -> testParser.TestParser
+.TestParser.removeComments: (self: testParser.TestParser, rawlines: global::Iterable(Structural({.find = (self: Obj, Obj) -> Int; .__getitem__ = (self: Obj, Obj) -> Never}))) -> Str
+.TestParser.parse: (self: testParser.TestParser) -> global::Dict!({Str: global::List!(Str, _: Nat)})
+
+.emitTestDict: (testDict: global::Indexable(Obj, global::Iterable(global::Indexable(Obj, {"raw"}))), handle: global::Writable!) -> NoneType

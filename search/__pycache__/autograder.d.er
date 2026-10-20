@@ -1,0 +1,64 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/autograder.py 1756681387 14730
+.grading = pyimport "grading"
+
+.importlib: Never
+
+.optparse: Never
+
+.os: Never
+
+.re: Never
+
+.sys: Never
+
+.projectParams = pyimport "projectParams"
+
+.random: Never
+
+
+.___v_desugar_1 = pyimport "pacman"
+.pacman = pyimport "pacman"
+.GameState: {pacman.GameState}
+
+
+.readCommand: (argv: Obj) -> Never
+.confirmGenerate: () -> NoneType
+.setModuleName: (module: Obj, filename: Obj) -> NoneType
+.loadModuleString: (moduleSource: Obj) -> Never
+.py_compile: Never
+
+.loadModuleFile: (moduleName: Obj, filePath: Obj) -> Never
+.readFile: (path: Obj, root: Obj := Obj) -> NoneType
+.ERROR_HINT_MAP: Never
+.pprint: Never
+
+.splitStrings: |T <: global::Indexable(K, E), T: Type, K :> global::Slice, E :> {"__"}|(d: global::Iterable(T)) -> global::Dict({T: Str})
+.printTest: |Self <: global::Indexable(K, V), T: Type, V <: global::Iterable(T), Self <: global::Indexable(K, V), K :> {"__raw_lines__"}, V <: global::Iterable(T)|(testDict: Self, solutionDict: Self) -> NoneType
+.runTest: |R :> {".test"}, R <: Structural({.__add__ = (self: Never, R) -> O and (self: Never, R) -> O}), O: Type, R :> {".solution"}|(testName: R, moduleDict: global::Indexable(Str, Never) and global::Iterable(Str), printTestCase: Bool := {False} and Bool, display: Obj := {None}) -> NoneType
+.getDepends: |Type_20223: Type, Type_20222: Type, T: Type, Type_19748 <: Structural({.TestParser = (self: Obj, Type_20222) -> Type_20223})|(testParser: Type_19748, testRoot: Obj, question: T) -> Structural({.__add__ = (self: Never, Obj) -> global::List!(T, 1)})
+.getTestSubdirs: |Type_19752 <: Structural({.TestParser = (self: Obj, Type_20256) -> Type_20257}), Type_20256: Type, Type_20257: Type|(testParser: Type_19752, testRoot: Obj, questionToGrade: {None}) -> global::List!(Never, _: Nat)
+.evaluate: (generateSolutions: Bool, testRoot: Obj, moduleDict: global::Iterable(Str) and global::Indexable(Str, Never), exceptionMap: Obj := Obj, edxOutput: Obj := Obj, muteOutput: Obj := Obj, gsOutput: Obj := Obj, printTestCase: Bool := Bool, questionToGrade: {None} := {None}, display: Obj := Obj) -> Never
+.getDisplay: (graphicsByDefault: Bool, options: Structural({.noGraphics = Bool}) := Structural({.noGraphics = Bool})) -> textDisplay.NullGraphics
+
+.options: Never
+
+
+
+
+.codePaths: Never
+.moduleDict: global::Dict!({Str: Never})
+
+.moduleName: Never
+
+
+
+
+
+
+
+
+
+
+
+
+

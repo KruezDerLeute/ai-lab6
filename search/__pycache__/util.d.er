@@ -1,0 +1,97 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/util.py 1756681387 25993
+.sys: Never
+
+.inspect: Never
+
+.heapq: Never
+.random: Never
+
+.FixedRandom: ClassType
+.FixedRandom.random: Never
+.FixedRandom.__call__: () -> util.FixedRandom
+
+
+.Stack: ClassType
+.Stack.list: Never
+.Stack.__call__: () -> util.Stack
+.Stack.push: (self: util.Stack, item: Obj) -> NoneType
+.Stack.pop: (self: util.Stack) -> Never
+.Stack.isEmpty: (self: util.Stack) -> {.len(.self.list) in {0}}
+
+.Queue: ClassType
+.Queue.list: Never
+.Queue.__call__: () -> util.Queue
+.Queue.push: (self: util.Queue, item: Obj) -> NoneType
+.Queue.pop: (self: util.Queue) -> Never
+.Queue.isEmpty: (self: util.Queue) -> {.len(.self.list) in {0}}
+
+.PriorityQueue: ClassType
+.PriorityQueue.heap: Never
+.PriorityQueue.count: Never
+.PriorityQueue.__call__: () -> util.PriorityQueue
+.PriorityQueue.push: (self: util.PriorityQueue, item: Obj, priority: Obj) -> NoneType
+.PriorityQueue.pop: (self: util.PriorityQueue) -> Never
+.PriorityQueue.isEmpty: (self: util.PriorityQueue) -> {.len(.self.heap) in {0}}
+.PriorityQueue.update: |E <: Structural({.__le__ = (self: Never, ?R) -> Bool}), R: Type|(self: util.PriorityQueue, item: E, priority: R) -> NoneType
+
+.PriorityQueueWithFunction: ClassType
+util = pyimport "util"
+.PriorityQueueWithFunction <: .PriorityQueue
+.PriorityQueueWithFunction.priorityFunction: Never
+.PriorityQueueWithFunction.__call__: (priorityFunction: Obj) -> util.PriorityQueueWithFunction
+.PriorityQueueWithFunction.push: (self: util.PriorityQueueWithFunction, item: Obj) -> NoneType
+
+.manhattanDistance: |Self <: global::Indexable(?K, ?R), Self <: global::Indexable(?K, ?V), K: Type, O :> Nat, V: Type, R: Type|(xy1: Self, xy2: Self) -> O
+
+.Counter: ClassType
+.Counter <: global::GenericDict
+.Counter.__getitem__: (self: Never, idx: Obj) -> {global::Dict({Never: Never})}
+.Counter.incrementAll: (self: util.Counter, keys: global::Iterable(Never), count: Obj) -> NoneType
+.Counter.argMax: (self: Never) -> Never
+.Counter.sortedKeys: (self: util.Counter) -> global::List!(Obj, _: Nat)
+.Counter.totalCount: (self: Never) -> global::Add(Never)
+.Counter.normalize: (self: Never) -> NoneType
+.Counter.divideAll: (self: util.Counter, divisor: Obj) -> NoneType
+.Counter.copy: (self: util.Counter) -> Never
+.Counter.__mul__: |Type_454 <: Structural({.__len__ = (self: Never) -> Nat})|(self: Obj, y: Type_454) -> Nat
+.Counter.__radd__: |Type_1764: Type, Type_467 <: Structural({.items = (self: Obj) -> ?1764})|(self: util.Counter, y: Type_467) -> NoneType
+.Counter.__add__: |K: Type, Type_2017: Type, R: Type, Type_481 <: Structural({.__contains__ = (self: Never, ?K) -> Bool; .__getitem__ = (self: Obj, ?K) -> ?R and (self: Obj, ?K) -> ?2017})|(self: Never, y: Type_481) -> util.Counter
+.Counter.__sub__: |Type_495 <: Structural({.__contains__ = (self: Never, ?K) -> Bool; .__getitem__ = (self: Obj, ?K) -> ?R and (self: Obj, ?K) -> ?R}), K: Type, R: Type|(self: Never, y: Type_495) -> util.Counter
+
+.raiseNotDefined: () -> NoneType
+.normalize: (vectorOrCounter: Never) -> Never
+.nSample: (distribution: Never, values: Never, n: {_: Int}) -> global::List!(Type, 1)
+.sample: |Type_3064: Type, Type_2837: Type, Type_2986: Type, Type_530 <: Structural({.items = (self: Obj) -> ?2837; .__getitem__ = (self: Obj, ?2986) -> ?R and (self: Obj, ?3053) -> ?R}), R: Type, Type_3053: Type|(distribution: Type_530, values: Structural({.__getitem__ = (self: Obj, Obj) -> Type_3064}) := {None} and Structural({.__getitem__ = (self: Obj, Obj) -> Type_3064})) -> Type_3064
+.sampleFromCounter: |Type_3104: Type, Type_541 <: Structural({.items = (self: Obj) -> ?3104})|(ctr: Type_541) -> Never
+.getProbability: (value: Obj, distribution: global::Iterable(Never), values: global::Iterable(Never)) -> Float
+.flipCoin: (p: Obj) -> Bool
+.chooseFromDistribution: |Type_3053 :> Nat, Type_530 <: Structural({.items = (self: Obj) -> ?Type_2837; .__getitem__ = (self: Obj, ?Type_2986) -> ?R and (self: Obj, ?Type_3053) -> ?R}), R <: Structural({.__add__ = (self: Never, ?R) -> ?R}), Type_2986 :> Nat, Type_2837 <: global::Iterable(Never)|(distribution: Type_530) -> NoneType
+.nearestPoint: (pos: Never) -> global::Tuple([Int, Int])
+.sign: |R: Type, O <: Structural({.__ge__ = (self: Never, ?R) -> Bool})|(x: O) -> Never
+.arrayInvert: |Type_3771: Type, T <: Structural({.__len__ = (self: Never) -> Nat; .__getitem__ = (self: Obj, ?3771) -> ?T}), T: Type|(array: global::Iterable(T)) -> global::List!(global::List!(T, 0), _: Nat)
+.matrixAsList: |K: Type, Type_3814: Type, Type_572 <: Structural({.__len__ = (self: Never) -> Nat; .__getitem__ = (self: Obj, ?T) -> ?3814 and (self: Obj, ?T) -> Never}), T: Type, T :> global::Tuple([?T, ?K])|(matrix: Type_572, value: {global::Dict({T: Never})} := {True} and {global::Dict({T: Never})}) -> global::List!(T, 1)
+.lookup: (name: Never, namespace: global::Dict(_: global::GenericDict)) -> Never
+.pause: () -> NoneType
+.signal: Never
+
+.time: Never
+
+.TimeoutFunctionException: ClassType
+.TimeoutFunctionException <: global::Exception
+
+.TimeoutFunction: ClassType
+.TimeoutFunction.timeout: Never
+.TimeoutFunction.function: Never
+.TimeoutFunction.__call__: (self: util.TimeoutFunction, *args: Obj, **keyArgs := Obj) -> Never
+.TimeoutFunction.handle_timeout: (self: util.TimeoutFunction, signum: Obj, frame: Obj) -> NoneType
+.TimeoutFunction.__call__: (self: util.TimeoutFunction, *args: Obj, **keyArgs := Obj) -> Never
+
+._ORIGINAL_STDOUT: {None}
+._ORIGINAL_STDERR: {None}
+._MUTED: {False}
+.WritableNull: ClassType
+.WritableNull.__call__: () -> util.WritableNull
+.WritableNull.write: (self: util.WritableNull, string: Obj) -> NoneType
+
+.mutePrint: () -> NoneType
+.unmutePrint: () -> NoneType

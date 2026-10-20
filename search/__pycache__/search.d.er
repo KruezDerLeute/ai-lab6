@@ -1,0 +1,21 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/search.py 1756681387 3893
+
+.util = pyimport "util"
+
+.SearchProblem: ClassType
+.SearchProblem.__call__: () -> search.SearchProblem
+.SearchProblem.getStartState: (self: search.SearchProblem) -> NoneType
+.SearchProblem.isGoalState: (self: search.SearchProblem, state: Obj) -> NoneType
+.SearchProblem.getSuccessors: (self: search.SearchProblem, state: Obj) -> NoneType
+.SearchProblem.getCostOfActions: (self: search.SearchProblem, actions: Obj) -> NoneType
+
+.tinyMazeSearch: (problem: Obj) -> global::List!({"South", "West"}, 8)
+.depthFirstSearch: (problem: search.SearchProblem) -> NoneType
+.breadthFirstSearch: (problem: search.SearchProblem) -> NoneType
+.uniformCostSearch: (problem: search.SearchProblem) -> NoneType
+.nullHeuristic: (state: Obj, problem: Obj := Obj) -> {0}
+.aStarSearch: (problem: search.SearchProblem, heuristic: Obj := Obj) -> NoneType
+.bfs: (problem: search.SearchProblem) -> NoneType
+.dfs: (problem: search.SearchProblem) -> NoneType
+.astar: (problem: search.SearchProblem, heuristic: Obj := Obj) -> NoneType
+.ucs: (problem: search.SearchProblem) -> NoneType

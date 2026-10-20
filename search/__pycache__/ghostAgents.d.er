@@ -1,0 +1,37 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/ghostAgents.py 1756681387 3108
+.___v_desugar_1 = pyimport "game"
+.game = pyimport "game"
+.Agent: {game.Agent}
+.___v_desugar_2 = pyimport "game"
+
+.Actions: {game.Actions}
+.___v_desugar_3 = pyimport "game"
+
+.Directions: {game.Directions}
+.random: Never
+
+.___v_desugar_4 = pyimport "util"
+.util = pyimport "util"
+.manhattanDistance: |Self <: global::Indexable(?K, ?R), Self <: global::Indexable(?K, ?V), K: Type, V: Type, R: Type|(xy1: Self, xy2: Self) -> Nat
+
+
+.GhostAgent: ClassType
+.GhostAgent <: game.Agent
+.GhostAgent.index: Never
+.GhostAgent.__call__: (index: Obj) -> ghostAgents.GhostAgent
+.GhostAgent.getAction: (self: ghostAgents.GhostAgent, state: Obj) -> Never
+.GhostAgent.getDistribution: (self: ghostAgents.GhostAgent, state: Obj) -> NoneType
+
+.RandomGhost: ClassType
+ghostAgents = pyimport "ghostAgents"
+.RandomGhost <: .GhostAgent
+.RandomGhost.getDistribution: |Type_9162: Type, Type_9163: Type, Type_9017 <: Structural({.getLegalActions = (self: Obj, ?9162) -> ?9163})|(self: ghostAgents.RandomGhost, state: Type_9017) -> util.Counter
+
+.DirectionalGhost: ClassType
+.DirectionalGhost <: .GhostAgent
+.DirectionalGhost.prob_attack: Never
+.DirectionalGhost.prob_scaredFlee: Never
+.DirectionalGhost.index: Never
+.DirectionalGhost.__call__: (index: Obj, prob_attack: Obj := Obj, prob_scaredFlee: Obj := Obj) -> ghostAgents.DirectionalGhost
+.DirectionalGhost.getDistribution: |K: Type, Type_9285: Type, T: Type, V: Type, Type_9286: Type, Type_9266: Type, Type_9265: Type, Type_9304: Type, Self <: global::Indexable(?K, ?V), Type_9036 <: Structural({.getGhostPosition = (self: Obj, ?9304) -> ?Self; .getGhostState = (self: Obj, ?9265) -> ?9266; .getLegalActions = (self: Obj, ?9285) -> ?9286; .getPacmanPosition = (self: Obj) -> ?T})|(self: ghostAgents.DirectionalGhost, state: Type_9036) -> util.Counter
+

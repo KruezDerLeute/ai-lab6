@@ -1,0 +1,140 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/game.py 1756681387 25546
+.DUMMY = pyimport "util"
+.util = pyimport "util"
+.time: Never
+.os: Never
+
+.traceback: Never
+
+.sys: Never
+
+.Agent: ClassType
+.Agent.index: Never
+.Agent.__call__: (index: Obj := Obj) -> game.Agent
+.Agent.getAction: (self: game.Agent, state: Obj) -> NoneType
+
+.Directions: ClassType
+.Directions.__call__: () -> game.Directions
+.Directions.NORTH: {"North"}
+.Directions.SOUTH: {"South"}
+.Directions.EAST: {"East"}
+.Directions.WEST: {"West"}
+.Directions.STOP: {"Stop"}
+.Directions.LEFT: Never
+.Directions.RIGHT: Never
+.Directions.REVERSE: Never
+
+.Configuration: ClassType
+.Configuration.direction: Never
+.Configuration.pos: Never
+.Configuration.__call__: (pos: Obj, direction: Obj) -> game.Configuration
+.Configuration.getPosition: (self: game.Configuration) -> Never
+.Configuration.getDirection: (self: game.Configuration) -> Never
+.Configuration.isInteger: (self: game.Configuration) -> Bool
+.Configuration.__eq__: |E: Type, E <: Structural({.direction = E; .pos = E})|(self: game.Configuration, other: E) -> Bool
+.Configuration.__hash__: (self: game.Configuration) -> Int
+.Configuration.__str__: (self: game.Configuration) -> Str
+.Configuration.generateSuccessor: (self: game.Configuration, vector: global::Indexable(Obj, Never)) -> game.Configuration
+
+.AgentState: ClassType
+.AgentState.configuration: Never
+.AgentState.scaredTimer: Never
+.AgentState.numReturned: Never
+.AgentState.start: Never
+.AgentState.isPacman: Never
+.AgentState.numCarrying: Never
+.AgentState.__call__: (startConfiguration: Obj, isPacman: Obj) -> game.AgentState
+.AgentState.__str__: (self: game.AgentState) -> Never
+.AgentState.__eq__: |E: Type, E <: Structural({.configuration = E; .scaredTimer = E})|(self: game.AgentState, other: E) -> Bool
+.AgentState.__hash__: (self: game.AgentState) -> Int
+.AgentState.copy: (self: game.AgentState) -> game.AgentState
+.AgentState.getPosition: (self: game.AgentState) -> Never
+.AgentState.getDirection: (self: game.AgentState) -> Never
+
+.Grid: ClassType
+.Grid.data: Never
+.Grid.CELLS_PER_INT: Never
+.Grid.height: Never
+.Grid.width: Never
+.Grid.__call__: (width: Obj, height: Obj, initialValue: Obj := Obj, bitRepresentation: Obj := Obj) -> game.Grid
+.Grid.__getitem__: (self: game.Grid, i: Obj) -> Never
+.Grid.__setitem__: (self: game.Grid, key: Obj, item: Obj) -> NoneType
+.Grid.__str__: (self: game.Grid) -> Str
+.Grid.__eq__: |E <: Structural({.data = E}), E: Type|(self: game.Grid, other: E) -> Bool
+.Grid.__hash__: (self: game.Grid) -> Int
+.Grid.copy: (self: game.Grid) -> game.Grid
+.Grid.deepCopy: (self: game.Grid) -> game.Grid
+.Grid.shallowCopy: (self: game.Grid) -> game.Grid
+.Grid.count: (self: game.Grid, item: Obj := Obj) -> Nat
+.Grid.asList: Never
+.Grid.packBits: (self: game.Grid) -> global::Tuple([Nat])
+.Grid._cellIndexToPosition: (self: game.Grid, index: {Type_v_global_4: Int | (Type_v_global_4 >= 0) and (Type_v_global_4 <= pred(_: Int))}) -> global::Tuple([Int, Never])
+.Grid._unpackBits: (self: game.Grid, bits: global::Iterable(Structural({.__lt__ = (self: Never, Obj) -> Bool; .__ge__ = (self: Never, Obj) -> Bool}))) -> NoneType
+.Grid._unpackInt: |Type_7068 <: Structural({.__lt__ = (self: Never, R) -> Bool; .__ge__ = (self: Never, R) -> Bool}), R: Type, R :> {0}|(self: game.Grid, packed: Type_7068, size: {_: Int}) -> global::List!(Bool, 2)
+
+.reconstituteGrid: (bitRep: game.Grid) -> game.Grid
+.Actions: ClassType
+.Actions.__call__: () -> game.Actions
+.Actions._directions: global::Dict!({{"Stop"}: global::Tuple([{0}, {0}]), {"East"}: global::Tuple([{1}, {0}]), {"West"}: global::Tuple([Int, {0}]), {"South"}: global::Tuple([{0}, Int]), {"North"}: global::Tuple([{0}, {1}])})
+.Actions._directionsAsList: global::DictItems(global::Tuple([{"Stop", "South", "West", "East", "North"}, global::Tuple([Int, {0}]) or global::Tuple([{0}, Int])]))
+.Actions.TOLERANCE: {0.001}
+.Actions.reverseDirection: |E :> {"South", "East", "North", "West"}|(action: E) -> E
+.Actions.reverseDirection: Never
+.Actions.vectorToDirection: (vector: global::Indexable(Obj, Never)) -> {"Stop"}
+.Actions.vectorToDirection: Never
+.Actions.directionToVector: (direction: Obj, speed: Obj := Obj) -> global::Tuple([Never, Never])
+.Actions.directionToVector: Never
+.Actions.getPossibleActions: |Type_499 <: Structural({.pos = Type_7295; .getDirection = (self: Obj) -> Type_7344}), Type_7295 <: game.Grid, Type_7344: Type|(config: Type_499, walls: game.Grid) -> global::List!(Never, 1)
+.Actions.getPossibleActions: Never
+.Actions.getLegalNeighbors: |E :> Int, Type_7552 :> Int, Type_7553 <: game.Grid, Type_507 <: Structural({.height = E; .width = E; .__getitem__ = (self: Obj, Type_7552) -> Type_7553})|(position: game.Grid, walls: Type_507) -> global::List!(global::Tuple([Int, Int]), 1)
+.Actions.getLegalNeighbors: Never
+.Actions.getSuccessor: (position: game.Grid, action: Obj) -> global::Tuple([Never, Never])
+.Actions.getSuccessor: Never
+
+.GameStateData: ClassType
+.GameStateData._capsuleEaten: Never
+.GameStateData._agentMoved: Never
+.GameStateData.scoreChange: Never
+.GameStateData._foodEaten: Never
+.GameStateData._foodAdded: Never
+.GameStateData._lose: Never
+.GameStateData._win: Never
+.GameStateData.__call__: (prevState: Obj := Obj) -> game.GameStateData
+.GameStateData.deepCopy: (self: game.GameStateData) -> game.GameStateData
+.GameStateData.copyAgentStates: |T :> game.AgentState or game.Grid, T <: Structural({.copy = (self: Obj) -> T})|(self: game.GameStateData, agentStates: global::Iterable(T)) -> global::List!(T, 1)
+.GameStateData.__eq__: |E: Type, E <: Structural({.capsules = E; .food = E; .agentStates = E; .score = E})|(self: game.GameStateData, other: E) -> {True}
+.GameStateData.__hash__: (self: game.GameStateData) -> Int
+.GameStateData.__str__: (self: game.GameStateData) -> Str
+.GameStateData._foodWallStr: (self: game.GameStateData, hasFood: Bool, hasWall: Bool) -> Never
+.GameStateData._pacStr: (self: game.GameStateData, dir: Obj) -> {"<"}
+.GameStateData._ghostStr: (self: game.GameStateData, dir: Obj) -> {"E"}
+.GameStateData.initialize: |Type_8202 <: global::Iterable(T), Type_599 <: Structural({.food = Type_8188; .capsules = Type_8190; .agentPositions = Type_8202}), T <: game.Grid, Type_8188 <: game.AgentState or game.Grid, Type_8190 <: game.Grid|(self: game.GameStateData, layout: Type_599, numGhostAgents: Obj) -> NoneType
+
+.boinc: Never
+
+._BOINC_ENABLED: {True}
+._BOINC_ENABLED: {False, True}
+
+.Game: ClassType
+.Game.agents: Never
+.Game.gameOver: Never
+.Game.agentTimeout: Never
+.Game.agentCrashed: Never
+.Game.totalAgentTimeWarnings: Never
+.Game.startingIndex: Never
+.Game.rules: Never
+.Game.totalAgentTimes: Never
+.Game.catchExceptions: Never
+.Game.muteAgents: Never
+.Game.moveHistory: Never
+.Game.display: Never
+.Game.agentOutput: Never
+.Game.__call__: (agents: Obj, display: Obj, rules: Obj, startingIndex: Obj := Obj, muteAgents: Obj := Obj, catchExceptions: Obj := Obj) -> game.Game
+.Game.getProgress: (self: game.Game) -> Never
+.Game._agentCrash: (self: game.Game, agentIndex: Obj, quiet: Bool := Bool) -> NoneType
+.Game.OLD_STDOUT: {None}
+.Game.OLD_STDERR: {None}
+.Game.mute: (self: game.Game, agentIndex: Obj) -> NoneType
+.Game.unmute: (self: game.Game) -> NoneType
+.Game.run: (self: game.Game) -> Never
+

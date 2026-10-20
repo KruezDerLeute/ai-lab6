@@ -1,0 +1,24 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/pacmanAgents.py 1756681387 2116
+.___v_desugar_1 = pyimport "pacman"
+.pacman = pyimport "pacman"
+.Directions: {game.Directions}
+.___v_desugar_2 = pyimport "game"
+.game = pyimport "game"
+.Agent: {game.Agent}
+.random: Never
+
+
+
+.util = pyimport "util"
+
+.LeftTurnAgent: ClassType
+.LeftTurnAgent <: game.Agent
+.LeftTurnAgent.getAction: |Type_18868 <: Structural({.getLegalPacmanActions = (self: Obj) -> ?18893; .getPacmanState = (self: Obj) -> ?18896}), Type_18893: Type, Type_18896: Type|(self: pacmanAgents.LeftTurnAgent, state: Type_18868) -> {"Stop"}
+
+.GreedyAgent: ClassType
+.GreedyAgent <: game.Agent
+.GreedyAgent.evaluationFunction: Never
+.GreedyAgent.__call__: (evalFn: Obj := Obj) -> pacmanAgents.GreedyAgent
+.GreedyAgent.getAction: |Type_18963: Type, T: Type, Type_18965: Type, Type_18874 <: Structural({.getLegalPacmanActions = (self: Obj) -> ?18948; .generateSuccessor = (self: Obj, ?18963, ?T) -> ?18965}), Type_18948: Type|(self: pacmanAgents.GreedyAgent, state: Type_18874) -> Never
+
+.scoreEvaluation: |Type_18876 <: Structural({.getScore = (self: Obj) -> ?19072}), Type_19072: Type|(state: Type_18876) -> Type_19072

@@ -1,0 +1,48 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/grading.py 1756681387 10955
+
+.___v_desugar_1: Never
+.escape: Never
+.time: Never
+
+.json: Never
+
+.traceback: Never
+
+.___v_desugar_2: Never
+.defaultdict: Never
+.util = pyimport "util"
+
+.Grades: ClassType
+.Grades.points: Never
+.Grades.prereqs: Never
+.Grades.mute: Never
+.Grades.messages: Never
+.Grades.project: Never
+.Grades.maxes: Never
+.Grades.start: Never
+.Grades.sane: Never
+.Grades.edxOutput: Never
+.Grades.currentQuestion: Never
+.Grades.questions: Never
+.Grades.questionTimeouts: Never
+.Grades.gsOutput: Never
+.Grades.__call__: (projectName: Obj, questionsAndMaxesList: Obj, gsOutput: Obj := Obj, edxOutput: Obj := Obj, muteOutput: Obj := Obj, questionTimeouts: Obj := Obj) -> grading.Grades
+.Grades.addPrereq: (self: grading.Grades, question: Obj, prereq: Obj) -> NoneType
+.Grades.grade: (self: grading.Grades, gradingModule: Obj, exceptionMap: global::Indexable(Obj, Never) or global::GenericDict or global::List(Never, _: Nat) := global::Indexable(Obj, Never) or global::GenericDict or global::List(Never, _: Nat), bonusPic: Structural({.__and__ = (self: Never, Obj) -> Bool}) := {False} and Structural({.__and__ = (self: Never, Obj) -> Bool})) -> NoneType
+.Grades.addExceptionMessage: ||Never
+.Grades.addErrorHints: (self: grading.Grades, exceptionMap: global::Indexable(Obj, Never) or global::GenericDict or global::List(Never, _: Nat), errorInstance: Obj, questionNum: Str) -> NoneType
+.Grades.produceGradeScopeOutput: (self: grading.Grades) -> NoneType
+.Grades.produceOutput: (self: grading.Grades) -> NoneType
+.Grades.fail: |B :> {False}, B <: Bool|(self: grading.Grades, message: Str, raw: B := B and B) -> NoneType
+.Grades.assignZeroCredit: (self: grading.Grades) -> NoneType
+.Grades.addPoints: (self: grading.Grades, amt: Obj) -> NoneType
+.Grades.deductPoints: (self: grading.Grades, amt: Obj) -> NoneType
+.Grades.assignFullCredit: (self: grading.Grades, message: Obj := Obj, raw: Obj := Obj) -> NoneType
+.Grades.addMessage: |B :> {False}, B <: Bool|(self: grading.Grades, message: Str, raw: B := B and B) -> NoneType
+.Grades.addMessageToEmail: (self: grading.Grades, message: Str) -> NoneType
+
+.Counter: ClassType
+.Counter <: global::GenericDict
+.Counter.__getitem__: (self: Never, idx: Obj) -> Never
+.Counter.totalCount: (self: Never) -> global::Add(Never)
+

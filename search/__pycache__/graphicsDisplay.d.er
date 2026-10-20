@@ -1,0 +1,119 @@
+##[pylyzer] failed /home/kami/Documents/ai/lab6/search/graphicsDisplay.py 1756681387 28042
+.DUMMY = pyimport "graphicsUtils"
+.graphicsUtils = pyimport "graphicsUtils"
+.math: Never
+.time: Never
+
+.___v_desugar_1 = pyimport "game"
+.game = pyimport "game"
+.Directions: {game.Directions}
+.DEFAULT_GRID_SIZE: {30.0}
+.INFO_PANE_HEIGHT: {35}
+.BACKGROUND_COLOR: Never
+.WALL_COLOR: Never
+.INFO_PANE_COLOR: Never
+.SCORE_COLOR: Never
+.PACMAN_OUTLINE_WIDTH: {2}
+.PACMAN_CAPTURE_OUTLINE_WIDTH: {4}
+.GHOST_COLORS: Never
+
+
+
+
+
+
+.TEAM_COLORS: Never
+.GHOST_SHAPE: Never
+.GHOST_SIZE: {0.65}
+.SCARED_COLOR: Never
+.GHOST_VEC_COLORS: Never
+.PACMAN_COLOR: Never
+.PACMAN_SCALE: {0.5}
+.FOOD_COLOR: Never
+.FOOD_SIZE: {0.1}
+.LASER_COLOR: Never
+.LASER_SIZE: {0.02}
+.CAPSULE_COLOR: Never
+.CAPSULE_SIZE: {0.25}
+.WALL_RADIUS: {0.15}
+.InfoPane: ClassType
+.InfoPane.base: Never
+.InfoPane.gridSize: Never
+.InfoPane.width: Never
+.InfoPane.fontSize: Never
+.InfoPane.height: Never
+.InfoPane.scoreText: Never
+.InfoPane.textColor: Never
+.InfoPane.__call__: (layout: Obj, gridSize: Obj) -> graphicsDisplay.InfoPane
+.InfoPane.toScreen: |R :> {None}|(self: graphicsDisplay.InfoPane, pos: global::Indexable(Obj, R), y: R := R) -> global::Tuple([Never, R])
+.InfoPane.drawPane: (self: graphicsDisplay.InfoPane) -> NoneType
+.InfoPane.initializeGhostDistances: (self: graphicsDisplay.InfoPane, distances: global::Iterable(Never)) -> NoneType
+.InfoPane.updateScore: (self: graphicsDisplay.InfoPane, score: Obj) -> NoneType
+.InfoPane.setTeam: (self: graphicsDisplay.InfoPane, isBlue: Bool) -> NoneType
+.InfoPane.updateGhostDistances: |Type_9172 <: Structural({.__len__ = (self: Never) -> Nat})|(self: graphicsDisplay.InfoPane, distances: Type_9172) -> NoneType
+.InfoPane.drawGhost: (self: graphicsDisplay.InfoPane) -> NoneType
+.InfoPane.drawPacman: (self: graphicsDisplay.InfoPane) -> NoneType
+.InfoPane.drawWarning: (self: graphicsDisplay.InfoPane) -> NoneType
+.InfoPane.clearIcon: (self: graphicsDisplay.InfoPane) -> NoneType
+.InfoPane.updateMessage: (self: graphicsDisplay.InfoPane, message: Obj) -> NoneType
+.InfoPane.clearMessage: (self: graphicsDisplay.InfoPane) -> NoneType
+
+.PacmanGraphics: ClassType
+.PacmanGraphics.currentGhostImages: Never
+.PacmanGraphics.have_window: Never
+.PacmanGraphics.pacmanImage: Never
+.PacmanGraphics.gridSize: Never
+.PacmanGraphics.capture: Never
+.PacmanGraphics.frameTime: Never
+.PacmanGraphics.zoom: Never
+.PacmanGraphics.__call__: (zoom: Obj := Obj, frameTime: Obj := Obj, capture: Obj := Obj) -> graphicsDisplay.PacmanGraphics
+.PacmanGraphics.checkNullDisplay: (self: graphicsDisplay.PacmanGraphics) -> {False}
+.PacmanGraphics.initialize: |Type_11083: Type, Type_11286 <: Structural({.layout = ?11083})|(self: graphicsDisplay.PacmanGraphics, state: Type_11286, isBlue: Obj := Obj) -> NoneType
+.PacmanGraphics.startGraphics: |Type_11083: Type, Type_11286 <: Structural({.layout = ?11083})|(self: graphicsDisplay.PacmanGraphics, state: Type_11286) -> NoneType
+.PacmanGraphics.drawDistributions: |Type_9239 <: Structural({.layout = ?11109}), Type_11109: Type|(self: graphicsDisplay.PacmanGraphics, state: Type_9239) -> NoneType
+.PacmanGraphics.drawStaticObjects: |Type_11083: Type, Type_11286 <: Structural({.layout = ?11083})|(self: graphicsDisplay.PacmanGraphics, state: Type_11286) -> NoneType
+.PacmanGraphics.drawAgentObjects: |Type_11083: Type, Type_11286 <: Structural({.layout = ?11083})|(self: graphicsDisplay.PacmanGraphics, state: Type_11286) -> NoneType
+.PacmanGraphics.swapImages: |Type_9262: Type, T: Type|(self: graphicsDisplay.PacmanGraphics, agentIndex: ?9262, newState: ?T) -> NoneType
+.PacmanGraphics.update: |Type_9271: Type|(self: graphicsDisplay.PacmanGraphics, newState: ?9271) -> NoneType
+.PacmanGraphics.make_window: |Type_9273: Type, Type_9275: Type|(self: graphicsDisplay.PacmanGraphics, width: ?9273, height: ?9275) -> NoneType
+.PacmanGraphics.drawPacman: |Type_9390: Type, Type_11538: Type, R: Type, O: Type|(self: graphicsDisplay.PacmanGraphics, pacman: ?9390, index: Structural({.__mod__ = (self: Never, ?R) -> ?O})) -> global::List!(?11538, 1)
+.PacmanGraphics.getEndpoints: |K: Type, Type_9297: Type, V: Type, Self <: global::Indexable(?K, ?V)|(self: graphicsDisplay.PacmanGraphics, direction: {"West"}, position: ?Self := ?Self and ?Self) -> ?9297
+.PacmanGraphics.movePacman: |K: Type, V: Type, T: Type|(self: graphicsDisplay.PacmanGraphics, position: global::Tuple([?T, ?T]), direction: {"West"}, image: global::Indexable(?K, ?V)) -> NoneType
+.PacmanGraphics.animatePacman: |Type_11386 <: Bool, Type_9390 <: Structural({.isPacman = ?Type_11386}), Type_9390 <: Structural({.isPacman = ?Type_11386}), V: Type, K :> {0}|(self: graphicsDisplay.PacmanGraphics, pacman: ?Type_9390, prevPacman: ?Type_9390, image: global::Indexable(?K, ?V)) -> NoneType
+.PacmanGraphics.getGhostColor: |Type_9328: Type, T: Type, Type_9325: Type, U: Type|(self: graphicsDisplay.PacmanGraphics, ghost: ?9325, ghostIndex: ?9328) -> ?U or ?T
+.PacmanGraphics.drawGhost: |Type_9390 <: Structural({.isPacman = ?Type_11386}), Type_11386 <: Bool, R: Type, O: Type, T :> NoneType|(self: graphicsDisplay.PacmanGraphics, ghost: ?Type_9390, agentIndex: Structural({.__mod__ = (self: Never, ?R) -> ?O})) -> global::List!(?T, 5)
+.PacmanGraphics.moveEyes: |K: Type, MAX: Int, V: Type, T :> {Type_v_global_4: Int | (Type_v_global_4 >= 0) and (Type_v_global_4 <= pred(?MAX))}|(self: graphicsDisplay.PacmanGraphics, pos: global::Tuple([?T, ?T]), dir: {"North"}, eyes: global::Indexable(?K, ?V)) -> NoneType
+.PacmanGraphics.moveGhost: |K: Type, Type_9390 <: Structural({.isPacman = ?Type_11386}), T: Type, Type_12585: Type, Type_9390 <: Structural({.isPacman = ?Type_11386}), V: Type, Type_11386 <: Bool, K :> {2, 0, 3, 1}, Self <: global::Indexable(?K, ?V)|(self: graphicsDisplay.PacmanGraphics, ghost: ?Type_9390, ghostIndex: ?12585, prevGhost: ?Type_9390, ghostImageParts: global::Indexable(?K, ?Self) and global::Iterable(?T)) -> NoneType
+.PacmanGraphics.getPosition: |Type_9390 <: Structural({.isPacman = ?Type_11386}), Type_11386 <: Bool, T: Type|(self: graphicsDisplay.PacmanGraphics, agentState: ?Type_9390) -> global::Tuple([?T, ?T])
+.PacmanGraphics.getDirection: |Type_9390 <: Structural({.isPacman = ?Type_11386}), Type_11386 <: Bool|(self: graphicsDisplay.PacmanGraphics, agentState: ?Type_9390) -> {"West"}
+.PacmanGraphics.finish: (self: graphicsDisplay.PacmanGraphics) -> NoneType
+.PacmanGraphics.to_screen: |Self <: global::Indexable(?K, ?V), K: Type, T: Type, V: Type|(self: graphicsDisplay.PacmanGraphics, point: global::Tuple([?T, ?T])) -> ?Self
+.PacmanGraphics.to_screen2: |K: Type, R: Type, O: Type|(self: Never, point: global::Indexable(?K, ?R)) -> global::Tuple([?O, ?O])
+.PacmanGraphics.drawWalls: (self: graphicsDisplay.PacmanGraphics, wallMatrix: Never) -> NoneType
+.PacmanGraphics.isWall: |Type_9431: Type|(self: graphicsDisplay.PacmanGraphics, x: Int, y: Int, walls: ?9431) -> Never
+.PacmanGraphics.drawFood: |Type_13893: Type, T :> global::List!(?Type_13893, 0)|(self: graphicsDisplay.PacmanGraphics, foodMatrix: Never) -> global::List!(?T, 1)
+.PacmanGraphics.drawCapsules: |K: Type, V: Type|(self: graphicsDisplay.PacmanGraphics, capsules: global::Iterable(?K)) -> global::Dict!({?K: ?V})
+.PacmanGraphics.removeFood: |Self <: global::Indexable(?K, ?V), Self <: global::Indexable(?K, ?V), K: Type, V: Type|(self: graphicsDisplay.PacmanGraphics, cell: ?Self, foodImages: ?Self) -> NoneType
+.PacmanGraphics.removeCapsule: |K: Type, Self <: global::Indexable(?K, ?V), V: Type, Self <: global::Indexable(?K, ?V)|(self: graphicsDisplay.PacmanGraphics, cell: ?Self, capsuleImages: ?Self) -> NoneType
+.PacmanGraphics.drawExpandedCells: |Type_9470: Type|(self: graphicsDisplay.PacmanGraphics, cells: ?9470) -> NoneType
+.PacmanGraphics.clearExpandedCells: (self: graphicsDisplay.PacmanGraphics) -> NoneType
+.PacmanGraphics.updateDistributions: |T: Type|(self: graphicsDisplay.PacmanGraphics, distributions: global::Iterable(?T)) -> NoneType
+
+.FirstPersonPacmanGraphics: ClassType
+graphicsDisplay = pyimport "graphicsDisplay"
+.FirstPersonPacmanGraphics <: .PacmanGraphics
+.FirstPersonPacmanGraphics.showGhosts: Never
+.FirstPersonPacmanGraphics.capture: Never
+.FirstPersonPacmanGraphics.__call__: (zoom: Obj := Obj, showGhosts: Obj := Obj, capture: Obj := Obj, frameTime: Obj := Obj) -> graphicsDisplay.FirstPersonPacmanGraphics
+.FirstPersonPacmanGraphics.initialize: |Type_14637: Type, Type_11286 <: Structural({.layout = ?14633 and ?14637}), Type_14633: Type|(self: graphicsDisplay.FirstPersonPacmanGraphics, state: Type_11286, isBlue: Obj := Obj) -> NoneType
+.FirstPersonPacmanGraphics.lookAhead: |Type_14673: Type, Type_9563 <: Structural({.getGhostStates = (self: Obj) -> ?14673; .getVisibleGhosts = (self: Obj) -> ?14676}), Type_14676: Type|(self: graphicsDisplay.FirstPersonPacmanGraphics, config: graphicsDisplay.PacmanGraphics, state: Type_9563) -> NoneType
+.FirstPersonPacmanGraphics.getGhostColor: (self: graphicsDisplay.FirstPersonPacmanGraphics, ghost: Obj, ghostIndex: Obj) -> Never
+.FirstPersonPacmanGraphics.getPosition: |Type_9599 <: Structural({.isPacman = ?R}), R: Type|(self: graphicsDisplay.FirstPersonPacmanGraphics, ghostState: Type_9599) -> Never
+
+.add: |O: Type, Self <: global::Indexable(Obj, Structural({.__sub__ = (self: Never, Float) -> Structural({.__sub__ = (self: Never, Float) -> Never}); .__add__ = (self: Never, Float) -> Never})), O <: Structural({.__sub__ = (self: Never, ?R) -> ?O}), R <: {0}, R: Type, Self <: global::Indexable(Obj, Structural({.__sub__ = (self: Never, ?R) -> ?O; .__add__ = (self: Never, ?R) -> ?O}))|(x: Self, y: global::Tuple([R, R])) -> Self
+.SAVE_POSTSCRIPT: {False}
+.POSTSCRIPT_OUTPUT_DIR: {"frames"}
+.FRAME_NUMBER: {0}
+.os: Never
+
+.saveFrame: () -> NoneType
